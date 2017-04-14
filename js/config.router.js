@@ -15,9 +15,7 @@ angular.module('app')
     .config(
         ['$stateProvider', '$urlRouterProvider',
             function ($stateProvider, $urlRouterProvider) {
-
-                $urlRouterProvider
-                    .otherwise('/app/dashboard-v1');
+                $urlRouterProvider.otherwise('/app/dashboard-v1');
                 $stateProvider
                     .state('app', {
                         abstract: true,
